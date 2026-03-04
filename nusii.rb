@@ -5,21 +5,21 @@
 class Nusii < Formula
   desc "CLI for the Nusii proposal software API"
   homepage "https://github.com/nusii/nusii-cli"
-  version "0.1.1"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Nusii/nusii-cli/releases/download/v0.1.1/nusii_0.1.1_darwin_amd64.tar.gz"
-      sha256 "a4dd3a4de218b87758721d7f34ed2c966659fce9990ad0655a300ea4313aa350"
+      url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.0/nusii_0.2.0_darwin_amd64.tar.gz"
+      sha256 "103b5ed44774a95dc6cb0551952e350a14d792c0c0ca4dcf022373a5625bae03"
 
       define_method(:install) do
         bin.install "nusii"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Nusii/nusii-cli/releases/download/v0.1.1/nusii_0.1.1_darwin_arm64.tar.gz"
-      sha256 "86978d15586a254cd12be4007156dc5971631a0cd77aa9f47fee4f9782eba8e9"
+      url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.0/nusii_0.2.0_darwin_arm64.tar.gz"
+      sha256 "217ff94fe2a8ad35d5934eb5502d85462368cf81c25d87f68c72a7f4e7f9e983"
 
       define_method(:install) do
         bin.install "nusii"
@@ -29,15 +29,15 @@ class Nusii < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nusii/nusii-cli/releases/download/v0.1.1/nusii_0.1.1_linux_amd64.tar.gz"
-      sha256 "2c0efe30d80045fbfc9dae54ede7dbc42b6f8905ed1222ab9e53409533b47ef1"
+      url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.0/nusii_0.2.0_linux_amd64.tar.gz"
+      sha256 "a2105405938410a826213fcf698c8a9426a3eb40b11af5d415da6d8ddeb4abf5"
       define_method(:install) do
         bin.install "nusii"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nusii/nusii-cli/releases/download/v0.1.1/nusii_0.1.1_linux_arm64.tar.gz"
-      sha256 "e7e4286828af45ac5a3a3cfdfb21b3ba9676de4f8a905ffff6faf97a38a8b0cd"
+      url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.0/nusii_0.2.0_linux_arm64.tar.gz"
+      sha256 "5bf6dba37e445f8eaa62c1ef03abde0f876901eb4add843b380e7b39381eb024"
       define_method(:install) do
         bin.install "nusii"
       end
