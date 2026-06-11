@@ -11,7 +11,7 @@ class Nusii < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.2/nusii_0.2.2_darwin_amd64.tar.gz"
-      sha256 "c6617e9e9893be4c025e2cc10b1022599c8aa0a5b8c09152fbc05ac801b85f81"
+      sha256 "50aac613cf58ff19fddd661140740631d7b619b042e89bf81019c7713533a36c"
 
       define_method(:install) do
         bin.install "nusii"
@@ -19,7 +19,7 @@ class Nusii < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.2/nusii_0.2.2_darwin_arm64.tar.gz"
-      sha256 "7caee64f89e13adc3e88fc6984379d6bc6577c86ca25d31b3682a9b619abf346"
+      sha256 "b27703324d451a0299f24fa6bfd9908997c6ae7d7cc17a85b663d993c76dd75f"
 
       define_method(:install) do
         bin.install "nusii"
@@ -30,14 +30,14 @@ class Nusii < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.2/nusii_0.2.2_linux_amd64.tar.gz"
-      sha256 "ff9d9c8b5f1c9d2d5373f9771e46e09a797e81ad0bffca2bef91ccdd8380c345"
+      sha256 "49494b75d62ce730b5f0f3fadfebd707075c289e7aa968c134f087ae7f125b3a"
       define_method(:install) do
         bin.install "nusii"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Nusii/nusii-cli/releases/download/v0.2.2/nusii_0.2.2_linux_arm64.tar.gz"
-      sha256 "54a77edbbb2116d4092060d77d0f9938f33f7b13859f5b34d66265537801c1aa"
+      sha256 "49ff532cdb68efe9408ec3321bccb1a6d637a5f560c6ac1cf56f156657bb474f"
       define_method(:install) do
         bin.install "nusii"
       end
